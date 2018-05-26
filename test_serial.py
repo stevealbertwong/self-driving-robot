@@ -10,7 +10,8 @@ s = [0]
 
 while True:
 	# ser.write("left", 100)
-	ser.write(1, 200)
+	# ser.write(1, 200)
+	ser.write(0)
 
 # while True:
 # 	read_serial=ser.readline()
