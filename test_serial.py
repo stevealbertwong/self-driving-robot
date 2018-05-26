@@ -5,10 +5,17 @@
 
 import serial
 
-# ser = serial.Serial('/dev/ttyACM0',9600)
-# s = [0]
+ser = serial.Serial('/dev/ttyACM0',9600)
+s = [0]
+
+while True:
+	# ser.write("left", 100)
+	ser.write(1, 200)
+
 # while True:
 # 	read_serial=ser.readline()
 # 	s[0] = str(int (ser.readline(),16))
 # 	print s[0]
 # 	print read_serial
+
+

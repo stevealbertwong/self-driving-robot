@@ -8,16 +8,6 @@ directly control movemnet of the car
 receive command from raspberry pi??
 */
 
-// assign pin num
-int right = 6;
-int left = 7;
-
-// duration for output
-int time = 50;
-// initial command
-int command = 0;
-
-
 /*
 void right(int time){
   // analogWrite(right_pin, 10); max 1230 between 0-5V, measure voltage
@@ -94,12 +84,20 @@ void send_command(int command, int time){
 }
 */
 
+// assign pin num
+int right = 6;
+int left = 7;
+
+// duration for output
+int time = 50;
+// initial command
+int command = 0;
 
 void setup() {
   pinMode(right_pin, OUTPUT);
   pinMode(left_pin, OUTPUT);
-  pinMode(forward_pin, OUTPUT);
-  pinMode(reverse_pin, OUTPUT);
+  // pinMode(forward_pin, OUTPUT);
+  // pinMode(reverse_pin, OUTPUT);
   Serial.begin(115200);
 }
 
